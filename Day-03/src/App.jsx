@@ -1,15 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Heading from './components/Heading';
+import Profile from './components/Profile';
+import Message from './components/Message';
+import myImage from './assets/me.jpeg'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const username = "Grace Wambui";
+  const isLoggedIn = true;
 
   return (
-    <>
-      const username = "Grace Wambui";
-    </>
+    <div className='text-center p-6'>
+	    <Heading greeting={`Hello, ${username}`} />
+	    <Profile avatar={myImage} alt="Grace's profile image" />
+      <Message isLoggedIn={isLoggedIn} />
+    </div>
   )
 }
 
