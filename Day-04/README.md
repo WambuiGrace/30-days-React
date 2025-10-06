@@ -1,5 +1,5 @@
 ## Day 4
-### Understand state
+### Understanding state
 State = data that can change (like clicks or input)
 When state updates, React re-renders the UI
 
